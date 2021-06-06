@@ -1,0 +1,72 @@
+%contact__cards {
+  width: calc((100% - 30px) / 2);
+  height: 350px;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact {
+  width: calc(100% - 330px);
+  margin: auto;
+  margin-bottom: 100px;
+  .contact__card-1 {
+    @extend %contact__cards;
+    background-color: #f6f7f9;
+    margin-right: 20px;
+    padding: 46px 124px 60px 50px;
+  }
+  .contact__card-2 {
+    @extend %contact__cards;
+    background-color: $primary;
+    padding: 46px 160px 50px 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact {
+    width: calc(100% - 30px);
+    .contact__card-1 {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 30px;
+      h2 {
+        font-size: $font-size-xl;
+      }
+    }
+    .contact__card-2 {
+      width: 100%;
+      padding: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact {
+    width: calc(100% - 150px);
+    .contact__card-1 {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .contact__card-2 {
+      width: 100%;
+      p {
+        line-height: 2;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .contact {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact {
+    width: calc(100% - 330px);
+  }
+}

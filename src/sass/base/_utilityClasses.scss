@@ -1,0 +1,150 @@
+// typography
+
+.text-1 {
+  font-size: $font-size-xxl;
+}
+.text-2 {
+  font-size: $font-size-xl;
+}
+.text-3 {
+  font-size: $font-size-lg;
+}
+.text-4 {
+  font-size: $font-size-md;
+}
+.text-5 {
+  font-size: $font-size-sm;
+}
+.text-6 {
+  font-size: $font-size-exsm;
+}
+
+// font weight
+
+.regular {
+  font-weight: $font-regular;
+}
+
+.bold {
+  font-weight: $font-bold;
+}
+
+.bolder {
+  font-weight: $font-bolder;
+}
+
+// font colors
+
+.primary {
+  color: $primary;
+}
+.secondary {
+  color: $secondary;
+}
+.light {
+  color: $light;
+}
+.green {
+  color: $green;
+}
+
+// margins
+.m-auto {
+  margin: auto;
+}
+
+// padding
+
+$padding: 20px, 25px, 30px, 40px, 50px;
+
+@each $p in $padding {
+  .p-#{$p} {
+    padding: $p;
+  }
+  .pt-#{$p} {
+    padding-top: $p;
+  }
+  .pb-#{$p} {
+    padding-bottom: $p;
+  }
+  .pl-#{$p} {
+    padding-left: $p;
+  }
+  .pr-#{$p} {
+    padding-right: $p;
+  }
+}
+
+// margin
+
+$margin: 5px, 10px, 20px, 30px, 40px, 50px;
+
+@each $m in $margin {
+  .mt-#{$m} {
+    margin-top: $m;
+  }
+  .mb-#{$m} {
+    margin-bottom: $m;
+  }
+  .ml-#{$m} {
+    margin-left: $m;
+  }
+  .mr-#{$m} {
+    margin-right: $m;
+  }
+}
+
+.fixed-navbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  // width: calc(100% - 330px);
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  vertical-align: middle;
+  // margin: 0 165px;
+  background-color: $primary;
+  box-shadow: -1px 3px 20px -4px rgba(0, 0, 0, 0.39);
+  .menu.show {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .fixed-navbar {
+    // width: calc(100% - 30px);
+    // margin: 0 15px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fixed-navbar {
+    // width: calc(100% - 150px);
+    // margin: 0 75px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .fixed-navbar {
+    // width: calc(100% - 150px);
+    // margin: 0 75px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fixed-navbar {
+    // width: calc(100% - 330px);
+    // margin: 0 165px;
+    width: 100%;
+    margin: auto;
+  }
+}

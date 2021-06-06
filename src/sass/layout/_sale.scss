@@ -1,0 +1,120 @@
+.sale {
+  @include background-image(
+    -webkit-image-set(url("../img/background-image-copy.jpg") 1x, url("../img/background-image-copy@2x.jpg")
+          2x, url("../img/background-image-copy@3x.jpg") 3x)
+  );
+  position: relative;
+
+  .sale__wrapper {
+    width: calc(100% - 330px);
+    margin: auto;
+    .sale__card {
+      position: absolute;
+      top: 30%;
+      transform: translateY(-50%);
+      width: 100%;
+      max-width: 540px;
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      padding: 49px 149px 50px 50px;
+
+      p {
+        vertical-align: middle;
+        span {
+          vertical-align: middle;
+          display: inline-block;
+        }
+      }
+      .sale__tag {
+        padding: 5px;
+        background-color: #ff9f00;
+        display: inline;
+        border-radius: 5px;
+      }
+    }
+    .sale__contact {
+      position: absolute;
+      top: 55%;
+      transform: translateY(-50%);
+      width: 100%;
+      max-width: 540px;
+      background-color: white;
+      border-radius: 10px;
+      vertical-align: middle;
+      padding: 20px 50px 20px 50px;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      img {
+        border-radius: 20px;
+        // float: left;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: middle;
+      }
+      .contact__name {
+        display: inline-block;
+        vertical-align: middle;
+        // float: left;
+      }
+      button {
+        float: right;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .sale {
+    .sale__wrapper {
+      width: calc(100% - 30px);
+      margin: auto;
+      .sale__card {
+        width: 90%;
+        margin: auto;
+        padding: 30px;
+      }
+      .sale__contact {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        top: 60%;
+        img {
+          margin-bottom: 10px;
+        }
+        .contact__name {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        button {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sale__wrapper {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .sale__wrapper {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .sale__wrapper {
+    width: calc(100% - 330px);
+  }
+}

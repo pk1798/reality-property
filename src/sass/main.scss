@@ -1,0 +1,24 @@
+// vendors
+@import "./vendors/reset";
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+// base
+@import "./base/utilityClasses";
+// components
+@import "./components/cards";
+@import "./components/buttons";
+// layout
+@import "./layout/wrapper";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/properties";
+@import "./layout/contacts";
+@import "./layout/sale";
+@import "./layout/footer";
+@import "./layout/feedback";
+
+// glide js
+
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";

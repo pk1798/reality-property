@@ -1,0 +1,129 @@
+.feedback_container {
+  width: calc(100% - 330px);
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  h2 {
+    font-size: $font-size-xl;
+    font-weight: $font-bolder;
+  }
+  .feedback {
+    max-width: 445px;
+    height: 450px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 50px 50px 62px;
+    background-color: #f6f7f9;
+    margin-top: 50px;
+    img {
+      border-radius: 5px;
+      margin-bottom: 40px;
+      margin-top: 50px;
+    }
+    h3 {
+      font-size: $font-size-lg;
+      font-weight: $font-bolder;
+      color: $secondary;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: $font-size-sm;
+      font-weight: $font-regular;
+      color: $secondary;
+      margin-bottom: 60px;
+    }
+  }
+
+  ul {
+    padding: 10px;
+    margin-top: 30px;
+    width: 100%;
+    // min-width: 300px;
+    li.glide__slide--active {
+      .feedback {
+        max-width: 445px;
+        height: 550px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 50px 50px 62px;
+        background-color: #fff;
+        box-shadow: 1px 2px 19px 0px rgba(0, 0, 0, 0.2);
+        margin: 0;
+        position: relative;
+        z-index: 50;
+        img {
+          border-radius: 5px;
+          margin-bottom: 50px;
+          margin-top: 50px;
+        }
+        h2 {
+          font-size: $font-size-lg;
+          font-weight: $font-bolder;
+          color: $secondary;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: $font-size-md;
+          font-weight: $font-regular;
+          color: $secondary;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  .glide__arrows {
+    .glide__arrow--left {
+      left: -7em;
+    }
+    .glide__arrow--right {
+      right: -7em;
+    }
+    button {
+      color: $primary;
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .feedback_container {
+    ul {
+      width: 100%;
+      li.glide__slide--active {
+        .feedback {
+          width: 90%;
+          margin: auto;
+          max-width: none;
+          p {
+            font-size: $font-size-sm;
+            font-weight: $font-regular;
+            color: $secondary;
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .feedback_container {
+    width: 90%;
+    margin: auto;
+    ul {
+      li.glide__slide--active {
+        width: 90%;
+        margin: auto;
+        max-width: none;
+        height: auto;
+      }
+    }
+    .glide__arrows {
+      display: none;
+    }
+  }
+}

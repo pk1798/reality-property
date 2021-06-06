@@ -1,0 +1,48 @@
+.properties {
+  width: calc(100% - 330px);
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .cards {
+    width: calc((100% - 60px) / 3);
+    margin-right: 25px;
+  }
+  .cards:nth-child(3n + 1) {
+    margin-right: 0;
+  }
+  .properties__button {
+    text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .properties {
+    width: calc(100% - 30px);
+    .cards {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .properties {
+    width: calc(100% - 150px);
+    .cards {
+      width: calc((100% - 30px) / 2);
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .properties {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .properties {
+    width: calc(100% - 330px);
+  }
+}

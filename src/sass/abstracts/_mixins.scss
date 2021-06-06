@@ -1,0 +1,36 @@
+@mixin responsive_navbar($width) {
+  font-size: $font-size-xl;
+  font-weight: $font-bold;
+  display: block;
+  position: absolute;
+  top: 100px;
+  margin-left: 0;
+  background-color: $primary;
+  border-radius: 20px;
+  width: $width;
+  margin: auto;
+  height: 80vh;
+  z-index: 10;
+  overflow: scroll;
+  text-align: center;
+  box-shadow: -1px 1px 20px 3px rgba(0, 0, 0, 0.24);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  a {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: $light;
+    margin-right: 0;
+  }
+}
+
+@mixin background-image($image-url) {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: $image-url;
+}
