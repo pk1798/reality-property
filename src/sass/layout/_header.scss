@@ -4,8 +4,6 @@
 }
 
 header {
-  // width: calc(100% - 330px);
-  // margin: auto;
   width: 100%;
   margin: 0;
   .header__wrapper {
@@ -47,7 +45,6 @@ header {
 
 @media (min-width: 320px) and (max-width: 767px) {
   header {
-    // width: calc(100% - 30px);
     width: 100%;
     .header__wrapper {
       width: calc(100% - 30px);
@@ -66,11 +63,9 @@ header {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
-    // width: calc(100% - 150px);
     width: 100%;
     .header__wrapper {
       width: calc(100% - 150px);
-
       .menu {
         display: none;
       }
@@ -86,7 +81,6 @@ header {
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   header {
-    // width: calc(100% - 150px);
     width: 100%;
     .header__wrapper {
       width: calc(100% - 150px);
@@ -96,7 +90,6 @@ header {
 
 @media (min-width: 1440px) {
   header {
-    // width: calc(100% - 330px);
     width: 100%;
     .header__wrapper {
       width: calc(100% - 330px);
