@@ -559,10 +559,10 @@ header {
               display: none; }
             .hero .hero__wrapper form .select-container .custom-select .custom-arrow .bi-chevron-down {
               display: inline-block; }
-            .hero .hero__wrapper form .select-container .custom-select .custom-arrow .bi-chevron-up.display {
-              display: inline-block; }
-            .hero .hero__wrapper form .select-container .custom-select .custom-arrow .bi-chevron-down.hide {
-              display: none; }
+        .hero .hero__wrapper form .select-container .custom-select:hover .custom-arrow .bi-chevron-up {
+          display: inline-block; }
+        .hero .hero__wrapper form .select-container .custom-select:hover .custom-arrow .bi-chevron-down {
+          display: none; }
         .hero .hero__wrapper form .select-container .custom-options {
           position: absolute;
           top: 60px;

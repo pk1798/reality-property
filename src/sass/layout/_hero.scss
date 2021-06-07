@@ -75,10 +75,20 @@
             .bi-chevron-down {
               display: inline-block;
             }
-            .bi-chevron-up.display {
+            // .bi-chevron-up.display {
+            //   display: inline-block;
+            // }
+            // .bi-chevron-down.hide {
+            //   display: none;
+            // }
+          }
+        }
+        .custom-select:hover {
+          .custom-arrow {
+            .bi-chevron-up {
               display: inline-block;
             }
-            .bi-chevron-down.hide {
+            .bi-chevron-down {
               display: none;
             }
           }
