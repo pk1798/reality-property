@@ -400,7 +400,7 @@ button {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -453,11 +453,10 @@ header {
         position: absolute;
         top: 100px;
         margin-left: 0;
-        background-color: #004dff;
+        background-color: rgba(0, 77, 255, 0.8);
         border-radius: 20px;
         width: calc(100% - 30px);
         margin: auto;
-        height: 80vh;
         z-index: 10;
         overflow: scroll;
         text-align: center;
@@ -487,11 +486,10 @@ header {
         position: absolute;
         top: 100px;
         margin-left: 0;
-        background-color: #004dff;
+        background-color: rgba(0, 77, 255, 0.8);
         border-radius: 20px;
         width: calc(100% - 150px);
         margin: auto;
-        height: 80vh;
         z-index: 10;
         overflow: scroll;
         text-align: center;
@@ -715,7 +713,7 @@ header {
 
 .sale {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
