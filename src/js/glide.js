@@ -1,5 +1,5 @@
+
 //glide - carousel
-new Glide('.glide').mount()
 
 const config ={
     type: 'carousel',
