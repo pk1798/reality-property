@@ -5,11 +5,10 @@
   position: absolute;
   top: 100px;
   margin-left: 0;
-  background-color: $primary;
+  background-color: rgba(0, 77, 255, 0.8);
   border-radius: 20px;
   width: $width;
   margin: auto;
-  height: 80vh;
   z-index: 10;
   overflow: scroll;
   text-align: center;
@@ -28,7 +27,7 @@
 
 @mixin background-image($image-url) {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
